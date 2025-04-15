@@ -27,26 +27,31 @@
             <input type="color" id="eyeColor" name="eyeColor"><br>
         </label><br>
         <label for="tailLength">Длина хвоста
-            <input type="number" id="tailLength" name="tailLength"><br>
+            <input type="number" min="7" max="120 "id="tailLength" name="tailLength" placeholder="7"><br>
         </label><br>
         <label for="name">Имя
-            <input type="text" id="name" name="name"><br>
+            <input type="text" minlength="3" maxlength="50" id="name" name="name" placeholder="Владимир"><br>
         </label><br>
         <label for="dateOfBirth">Дата рождения
-            <input type="date" id="dateOfBirth" name="dateOfBirth"><br>
+            <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="2000-01-01"><br>
         </label><br>
         <label for="email">Почта
-            <input type="email" id="email" name="email"><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.ru"><br>
         </label><br>
         <label for="phone">Телефон
-            <input type="tel" id="phone" name="phone"><br>
+            <input type="tel" id="phone" name="phone" required placeholder="+79999999999"><br>
         </label><br>
         <label for="rules">Правила
-            <input type="textarea" id="rules" name="rules"><br>
+            <input type="checkbox" id="rules" name="rules" value="true"><br>
         </label><br>
-        <button name="submit">
-            <strong>Отправьте нам</strong> сообщение
-          </button>     
+        <label>
+            <button name="submit">
+                Отправьте нам сообщение
+            </button><br><br><br><br>
+        </label>
+        <label>
+            <input type="reset">
+        </label> 
     </form>
     <!--Форму размещай тут-->
 
